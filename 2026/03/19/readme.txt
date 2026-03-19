@@ -36,6 +36,30 @@ int main() {
 >>
 
 3. Tính tổng và in ra bội số của 3 trong đoạn [a, b]
+
+>> CODE
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("a = ");
+    scanf("%d", &a);
+    printf("b = ");
+    scanf("%d", &b);
+    printf("Ta co lan luot cac boi so: ");
+    int tong = 0;
+    for(int i = a; i < b; i++) {
+        if (i % 3 == 0) {
+            printf("%d ", i);
+            tong += i;
+        }
+    }
+    printf("\n");
+    printf("Tong cua cac boi so tren la: %d", tong);
+    return 0;
+}
+>>
+
 4. Tìm số đầu tiên chia hết cho 7
 Yêu cầu: Viết chương trình duyệt các số nguyên từ 100 trở xuống. Khi tìm thấy số đầu tiên chia hết cho 7, hãy in ra số đó và dừng ngay vòng lặp.
 Gợi ý: Sử dụng vòng lập for (hoặc while) và lệnh break.
