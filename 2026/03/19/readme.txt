@@ -63,6 +63,23 @@ int main() {
 4. Tìm số đầu tiên chia hết cho 7
 Yêu cầu: Viết chương trình duyệt các số nguyên từ 100 trở xuống. Khi tìm thấy số đầu tiên chia hết cho 7, hãy in ra số đó và dừng ngay vòng lặp.
 Gợi ý: Sử dụng vòng lập for (hoặc while) và lệnh break.
+
+>> CODE2
+#include <stdio.h>
+
+int main() {
+    int i = 100;
+    while (i >= 0) {
+        if (i % 7 == 0) {
+            printf("So dau tien chia het cho 7 la: %d\n", i);
+            break;
+        }
+        i--;
+    }
+    return 0;
+}
+>>
+
 5. In ra các số không chia hết cho 5
 Yêu cầu: Viết chương trình in ra tất cả các số nguyên từ 1 đến n (Số
 nguyên dương nhập từ bàn phím), nhưng bỏ qua những số mà chia hết cho 5.
