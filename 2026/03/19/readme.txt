@@ -99,3 +99,20 @@ int main() {
 Yêu cầu: Viết chương trình in ra tất cả các số nguyên từ 1 đến n (Số
 nguyên dương nhập từ bàn phím), nhưng bỏ qua những số mà chia hết cho 5.
 Gợi ý: Sử dụng vòng lặp for và lệnh continue.
+
+>> CODE
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Nhap n: ");
+	scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        if (i % 5 == 0) {
+            continue;
+        }
+        printf("%d ", i);
+    }
+    return 0;
+}
+>>
